@@ -54,7 +54,7 @@ I'm **Naga Sasank**, the founder of **NS ANIMATRIX** – a passionate 3D Artist 
 
 ## 📬 Contact
 
-- ✉️ **Email:** saifilmog@gmail.com  
+- ✉️ **Email:** rockingshooters7@gmail.com  
 - 🧠 **Studio:** NS ANIMATRIX  
 - 🔗 **GitHub:** [@NSSTUDIO-html](https://github.com/NSSTUDIO-html)
 
