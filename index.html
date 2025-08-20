@@ -3,87 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NS ANIMATRIX – 3D Graphics Artist Portfolio</title>
+  <title>NS ANIMATRIX – 3D Graphics Artist</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-950 text-white font-sans">
+<body class="bg-gray-950 text-white font-sans tracking-wide">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-400">NS ANIMATRIX</h1>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+        <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-  <header class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image:url('your-hero-image.jpg')">
-    <div class="absolute inset-0 bg-black/60"></div>
-    <div class="relative text-center">
-      <h1 class="text-5xl font-bold">NS ANIMATRIX</h1>
-      <p class="mt-4 text-xl text-gray-300">3D Graphics & VFX Artist</p>
-      <a href="#projects" class="mt-6 inline-block bg-blue-500 px-6 py-3 rounded-lg text-white hover:bg-blue-600">View Work</a>
+  <header id="home" class="h-screen flex items-center justify-center relative bg-cover bg-center" style="background-image:url('hero.jpg')">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative text-center max-w-2xl">
+      <h2 class="text-5xl md:text-6xl font-extrabold">Cinematic 3D Visuals</h2>
+      <p class="mt-4 text-lg text-gray-300">Crafting stunning 3D animations, VFX, and immersive experiences</p>
+      <a href="#projects" class="mt-6 inline-block bg-blue-500 px-6 py-3 rounded-lg text-white hover:bg-blue-600 transition">Explore Work</a>
     </div>
   </header>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-16 max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
       <!-- Project Card -->
-      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
-        <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Karna vs Arjuna</h3>
-          <p class="text-gray-400 text-sm">3D Animated Fight</p>
+      <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition">
+        <img src="project1.jpg" alt="Project" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-xl font-semibold">Karna vs Arjuna</h3>
+          <p class="text-sm text-gray-300">Epic 3D Fight Animation</p>
         </div>
       </div>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
-        <img src="project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">Kalki Arrival</h3>
-          <p class="text-gray-400 text-sm">Cinematic Scene</p>
+      <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition">
+        <img src="project2.jpg" alt="Project" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-xl font-semibold">Kalki Arrival</h3>
+          <p class="text-sm text-gray-300">Cinematic Scene</p>
         </div>
       </div>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition">
-        <img src="project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold">RRR Elements</h3>
-          <p class="text-gray-400 text-sm">VFX & Motion Graphics</p>
+      <div class="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition">
+        <img src="project3.jpg" alt="Project" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-xl font-semibold">RRR Elements</h3>
+          <p class="text-sm text-gray-300">VFX & Motion Graphics</p>
         </div>
       </div>
-      <!-- Add more project cards -->
+
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-900 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p class="text-gray-300 leading-relaxed">
-      I’m <span class="font-semibold">Naga Sasank</span>, founder of <span class="font-semibold">NS ANIMATRIX</span>. 
-      I create cinematic 3D animations and visual effects using Blender, Substance Painter, After Effects, and WebGL.
-      My passion is crafting epic visuals that tell immersive stories.
-    </p>
-    <div class="mt-6 flex justify-center flex-wrap gap-4">
-      <span class="bg-gray-800 px-4 py-2 rounded-lg">Blender</span>
-      <span class="bg-gray-800 px-4 py-2 rounded-lg">After Effects</span>
-      <span class="bg-gray-800 px-4 py-2 rounded-lg">Substance Painter</span>
-      <span class="bg-gray-800 px-4 py-2 rounded-lg">Three.js</span>
+  <section id="about" class="py-20 bg-gray-900 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-300 leading-relaxed">
+        I’m <span class="font-semibold">Naga Sasank</span>, founder of <span class="font-semibold">NS ANIMATRIX</span>.  
+        With expertise in Blender, Substance Painter, After Effects, and WebGL, I design cinematic 3D experiences and VFX.  
+        My goal is to bring imagination to life through high-quality visuals.
+      </p>
+      <div class="mt-8 flex justify-center flex-wrap gap-4">
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">Blender</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">After Effects</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">Substance Painter</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-lg">Three.js</span>
+      </div>
     </div>
-  </section>
-
-  <!-- YouTube Section -->
-  <section class="py-16 px-6 text-center">
-    <h2 class="text-2xl font-bold">YouTube Channel Coming Soon!</h2>
-    <p class="text-gray-400 mt-2">Behind-the-scenes breakdowns and project showcases launching soon.</p>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-900 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
-    <div class="text-center">
-      <p>Email: <a href="mailto:saifilmog@gmail.com" class="text-blue-400 hover:underline">saifilmog@gmail.com</a></p>
-      <p class="mt-2">GitHub: <a href="https://github.com/nsstudio-html" class="text-blue-400 hover:underline">github.com/nsstudio-html</a></p>
-      <p class="mt-2">More: Python Developer Portfolio | Matrix AI Project</p>
-    </div>
+  <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+    <p class="text-gray-400 mb-6">Let’s collaborate on creating cinematic visuals and immersive 3D experiences.</p>
+    <p>Email: <a href="mailto:saifilmog@gmail.com" class="text-blue-400 hover:underline">saifilmog@gmail.com</a></p>
+    <p class="mt-2">GitHub: <a href="https://github.com/nsstudio-html" class="text-blue-400 hover:underline">github.com/nsstudio-html</a></p>
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center text-gray-500 text-sm">
+  <footer class="py-6 text-center text-gray-500 text-sm bg-gray-900">
     © 2025 NS ANIMATRIX. All rights reserved.
   </footer>
 
